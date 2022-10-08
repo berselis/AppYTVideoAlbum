@@ -3,8 +3,18 @@ Aplicación que te permite registrar link de videos de YouTube donde podrás vis
 
 1.	Esta aplicación ha sido creada en .NET Framework 4.7.2 Web Form.
 2.	Base de datos se ha utilizado MSSQL Server.
-3.	Si quires utilzar otra base de datos en el archivo Web.config puedes modificar el connextionString. Sino, no es necesario modificar esta parte. 
+3.	Crear una base de datos con el nombre de [AppYTVideoDB] y dentro de ella una tabla con el siguiente nombre [Videos].
+Puede ejecutar el siguiente comando SQL
 
+CREATE TABLE [dbo].[Videos] (
+    [IdVideo]  INT IDENTITY (1, 1) NOT NULL,
+    [UrlVideo] NVARCHAR (MAX) NOT NULL,
+    [Tittle]   NVARCHAR (100) NOT NULL,
+    [UrlImg]   NVARCHAR (MAX) NOT NULL,
+    [Descript] NVARCHAR (MAX) NOT NULL
+); 
+
+4. Luego configurar el connectionString hacia la base de datos creada.
 ![conString](https://user-images.githubusercontent.com/68135098/194691450-e2532a51-5ed6-40f2-b9fc-52bafb99f2a4.png)
 
 4. Para el buen funcionamiento de la aplicación necesitar tener tu propia ApiHey de Google Cloud para utilizar YouTube, y ponerla en el siguiente archivo. 
