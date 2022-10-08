@@ -7,7 +7,7 @@ Aplicación que te permite registrar link de videos de YouTube donde podrás vis
 Puede ejecutar el siguiente comando SQL
 
 CREATE TABLE [dbo].[Videos] (
-    [IdVideo]  INT IDENTITY (1, 1) NOT NULL,
+    [IdVideo]  INT PRIMARY KEY IDENTITY (1, 1) NOT NULL,
     [UrlVideo] NVARCHAR (MAX) NOT NULL,
     [Tittle]   NVARCHAR (100) NOT NULL,
     [UrlImg]   NVARCHAR (MAX) NOT NULL,
