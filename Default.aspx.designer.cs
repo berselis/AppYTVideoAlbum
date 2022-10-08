@@ -15,6 +15,42 @@ namespace AppYTVideoAlbum
     {
 
         /// <summary>
+        /// IdVideoDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox IdVideoDelete;
+
+        /// <summary>
+        /// BtnConfirmDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnConfirmDelete;
+
+        /// <summary>
+        /// BtnVideoPlay control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnVideoPlay;
+
+        /// <summary>
+        /// IdVideoPlay control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox IdVideoPlay;
+
+        /// <summary>
         /// UrlText control.
         /// </summary>
         /// <remarks>

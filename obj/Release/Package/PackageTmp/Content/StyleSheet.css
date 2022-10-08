@@ -1,0 +1,127 @@
+﻿
+.content-place-holder{
+    margin-top:35px !important;
+}
+
+.panel-video-list {
+    margin: 5rem 0 5rem 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+}
+
+
+.card-video {
+    position: relative;
+    width: 360px;
+    height: 200px;
+    overflow: hidden;
+    border: solid 1px #efecec;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.card-video:hover{
+    transition:all .3s ease;
+    transform: translateY(-5px);
+}
+
+
+
+.btn-delete-video {
+    font-size: 16px;
+    opacity: .5;
+    top: 5px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #ffffff;
+    text-decoration: none;
+    width: 22px;
+    height: 22px;
+    font-weight: 600;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.btn-delete-video:hover{
+    opacity: 1;
+    transition: all .3s ease
+}
+
+
+
+
+.view-detail {
+    cursor: pointer;
+}
+
+.msj-error {
+    color: #ff6a00;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.hidden-element {
+    display: none;
+}
+
+.img-video-paly{
+    max-width:250px;
+}
+
+
+.thumbnail-video-play {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-video-play {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 600;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: .7;
+    border: none;
+    transition: all .3s ease;
+}
+
+.btn-video-play:hover {
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.frame-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
