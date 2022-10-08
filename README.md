@@ -1,2 +1,4 @@
 # AppYTVideoAlbum
- Proyecto de registrar link de videos de youtube, realizado en .net web forms y sql server
+Aplicación que te permite registrar link de videos de YouTube donde podrás visualizar todos los que hayas guardado, viendo las miniaturas e información sobre éstos, también podrás reproducirlos y/o eliminarlos del listado creado. 
+
+
