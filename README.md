@@ -40,6 +40,6 @@ LISTO! 🚀
 
 Es todo, a correr la aplicación.
 
-aqui de dejo el link donde se encuentra desplegada: https://bdevelopment.net/appytvideoalbum/
+aquí dejo el link donde se encuentra desplegada: https://bdevelopment.net/appytvideoalbum/
 
 
