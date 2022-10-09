@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-
+   
 
     <!--Titulo de la app -->
     <div class="row content-place-holder">
@@ -96,6 +96,7 @@
 
                 const IdVideo = e.target.id.split('_')[1];
                 const label = document.getElementById(`MainContent_${IdVideo}_Label`);
+                console.log(label)
 
                 const video = JSON.parse(label.innerText);
 

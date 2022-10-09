@@ -68,6 +68,13 @@ namespace AppYTVideoAlbum
             detail.Controls.Add(img);
             panel.Controls.Add(detail);
 
+            //TextBox labelData = new TextBox
+            //{
+            //    CssClass = "hidden-element",
+            //    ID = $"{video.IdVideo}_Label",
+            //    Text = json.Serialize(video)
+            //};
+
             Label labelData = new Label
             {
                 CssClass = "hidden-element",
@@ -135,6 +142,7 @@ namespace AppYTVideoAlbum
             WebClient webClient = new WebClient();
             try
             {
+                webClient.Encoding = System.Text.Encoding.UTF8;
                 return webClient.DownloadString(endPoint);
             }
             catch

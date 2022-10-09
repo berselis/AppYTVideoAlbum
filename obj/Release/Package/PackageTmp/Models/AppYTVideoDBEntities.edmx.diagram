@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="98b95f8d0de844b4a77ab37a33123bf5" Name="Diagram1">
+      <Diagram DiagramId="bed760ce6c6c4ad29872513d6cf18508" Name="Diagram1">
         <EntityTypeShape EntityType="AppYTVideoDBModel.Videos" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>

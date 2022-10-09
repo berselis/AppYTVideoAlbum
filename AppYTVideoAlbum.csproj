@@ -102,8 +102,8 @@
     <Content Include="Global.asax" />
     <Content Include="Models\AppYTVideoDBEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AppYTVideoDBEntities.Context.cs</LastGenOutput>
       <DependentUpon>AppYTVideoDBEntities.edmx</DependentUpon>
+      <LastGenOutput>AppYTVideoDBEntities.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\AppYTVideoDBEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -111,9 +111,8 @@
       <LastGenOutput>AppYTVideoDBEntities.cs</LastGenOutput>
     </Content>
     <Content Include="PlayVideo.aspx" />
-    <Content Include="Setup\Example.APIKEY.xml" />
     <Content Include="Setup\APIKEY.xml" />
-    <Content Include="Web.config" />
+    <Content Include="Setup\Example.APIKEY.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -173,6 +172,14 @@
       <DependentUpon>AppYTVideoDBEntities.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
+    <Content Include="Web_Example.config" />
+    <Content Include="Web_Example.Debug.config">
+      <DependentUpon>Web_Example.config</DependentUpon>
+    </Content>
+    <Content Include="Web_Example.Release.config">
+      <DependentUpon>Web_Example.config</DependentUpon>
+    </Content>
+    <Content Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

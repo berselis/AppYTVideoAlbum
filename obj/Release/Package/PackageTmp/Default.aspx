@@ -2,7 +2,7 @@
 
 <asp:Content ContentPlaceHolderID="head" runat="server"></asp:Content>
 
-<asp:Content ContentPlaceHolderID="MainContent" runat="server" CssClass="content-place-holder">
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
 
     <!-- Modal | Dialogo para remover video -->
     <button hidden id="BtnShowModalDelete" type="button" data-bs-toggle="modal" data-bs-target="#ModalDelete"></button>
@@ -50,10 +50,10 @@
             </div>
         </div>
     </div>
-
+   
 
     <!--Titulo de la app -->
-    <div class="row">
+    <div class="row content-place-holder">
         <div class="col-md-12">
             <h3 class="text-center"><strong>YTVideos album</strong></h3>
             <hr />
@@ -96,6 +96,7 @@
 
                 const IdVideo = e.target.id.split('_')[1];
                 const label = document.getElementById(`MainContent_${IdVideo}_Label`);
+                console.log(label)
 
                 const video = JSON.parse(label.innerText);
 
