@@ -1,10 +1,16 @@
-# AppYTVideoAlbum
+# AppYTVideoAlbum ✨
 Aplicación que te permite registrar link de videos de YouTube donde podrás visualizar todos los que hayas guardado, viendo las miniaturas e información sobre éstos, también podrás reproducirlos y/o eliminarlos del listado creado. 
 
-1.	Esta aplicación ha sido creada en .NET Framework 4.7.2 Web Form.
-2.	Base de datos se ha utilizado MSSQL Server.
-3.	Crear una base de datos con el nombre de [AppYTVideoDB] y dentro de ella una tabla con el siguiente nombre [Videos].
-Puede ejecutar el siguiente comando SQL
+⚙️Esta aplicación ha sido creada en .NET Framework 4.7.2 Web Form & Base de datos se ha utilizado MSSQL Server.
+
+Pasos para implementar aplicación:
+
+1️⃣Renombar el archivo [Web_Example.config] por => [Web.config]
+
+![Screenshot 2022-10-08 2321492222](https://user-images.githubusercontent.com/68135098/194736834-8c84a3a9-091c-4860-981c-8cd813626b43.png)
+
+2️⃣Crear una base de datos con el nombre de [AppYTVideoDB] y dentro de ella una tabla con el siguiente nombre [Videos].
+Puede ejecutar el comando SQL debajo ⬇️
 
 CREATE TABLE [dbo].[Videos] (
     [IdVideo]  INT PRIMARY KEY IDENTITY (1, 1) NOT NULL,
@@ -14,30 +20,26 @@ CREATE TABLE [dbo].[Videos] (
     [Descript] NVARCHAR (MAX) NOT NULL
 ); 
 
-4. Luego configurar el connectionString hacia la base de datos creada.
-![conString](https://user-images.githubusercontent.com/68135098/194691450-e2532a51-5ed6-40f2-b9fc-52bafb99f2a4.png)
+3️⃣Agregar en la carpeta Models un item ADO.NET Entity Data Model de la base de datos creada y ponerle el siguiente nombre a la conexión [AppYTVideoDBEntities], esto para reemplazar la conexión existente el cual tiene el mismo nombre.
 
-4. Para el buen funcionamiento de la aplicación necesitar tener tu propia ApiHey de Google Cloud para utilizar YouTube, y ponerla en el siguiente archivo. 
-Carpeta Setup > Example.APIKEY.xml | renombar por APIKEY.xml
+![Screenshot 2022-10-08 232226](https://user-images.githubusercontent.com/68135098/194737163-f4ff92e8-04da-47d5-aaa6-e44b417fa103.png)
 
-![root](https://user-images.githubusercontent.com/68135098/194691890-bb74782d-fc2c-4f42-a4d0-1ea06089bb17.png)
+4️⃣Renombar el archido [Example.APIKEY.xml] por => [APIKEY.xml]
 
-5. Dentro de este colocaras tu ApiKey.
+![Screenshot 2022-10-09 000001](https://user-images.githubusercontent.com/68135098/194737697-e4b3b2ff-8e8c-4c2a-8e42-74f909a4ba03.png)
 
-![apiKeyfile](https://user-images.githubusercontent.com/68135098/194691936-1bf95035-8cb3-4750-a951-3460a4b3de27.png)
+5️⃣Dentro de este archivo colocar tu APIKEY para utilizar los recursos de YouTube, de lo contrario la aplicación no podra procesar los link insertados.
 
-6. Correr en servicod, Listo
+![Screenshot 2022-10-09 000037](https://user-images.githubusercontent.com/68135098/194737742-b363a2b8-8a53-4367-b30a-35aa4abcbb06.png)
 
-Aqui les muesto captura de pantalla de la aplicación:
+6️⃣Los directorio del proyecto deberían ser como se muestra en la siguiente imagen
 
-Pegando url
-![list](https://user-images.githubusercontent.com/68135098/194692047-7bf5ef9d-d53b-4b47-8ad0-a22ff60f4036.png)
+![Screenshot 2022-10-09 000214](https://user-images.githubusercontent.com/68135098/194737796-ba6a9f41-180b-4ce3-adc3-00d5d873a401.png)
 
-Viendo detalles
-![details](https://user-images.githubusercontent.com/68135098/194692070-2c1ae664-7954-4bd5-9a9e-7f5984e24499.png)
+LISTO! 🚀
 
-Eliminando
-![removeDialog](https://user-images.githubusercontent.com/68135098/194692081-f4fb1394-37df-43d0-84d4-511096dd96f2.png)
+Es todo, a correr la aplicación.
 
-en el la interfaz de reproducción
-![videoFrame](https://user-images.githubusercontent.com/68135098/194692118-2ff8b8b6-449b-4adb-beeb-f83c762bc127.png)
+aqui de dejo el link donde se encuentra desplegada: https://bdevelopment.net/appytvideoalbum/
+
+
